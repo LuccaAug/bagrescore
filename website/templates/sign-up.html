@@ -2,6 +2,48 @@
 
 {% block title %}Vire um bagre!{% endblock %}
 
-
 {% block content %}
+<form method="POST" id="signup-form" enctype="multipart/form-data">
+    <br>
+    <div style="align-content: center">
+        <h3>Vire um <span>BAGRE</span>!</h3>
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input class="form-control" id="email" name="email" type="email" placeholder="negosvaldo.oliv99@gmail.com"/>
+    </div>
+    <div class="form-group">
+        <label for="senha">Senha</label>
+        <input class="form-control" id="senha" name="senha" type="password" placeholder="**********"/>
+    </div>
+    <div class="form-group">
+        <label for="senha_confirmacao">Confirme sua senha</label>
+        <input class="form-control" id="senha_confirmacao" name="senha_confirmacao" type="password" placeholder="**********"/>
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="nome">Nome</label>
+        <input class="form-control" id="nome" name="nome" type="text" placeholder="Negosvaldo Oliveira"/>
+    </div>
+    <div class="form-group">
+        <label for="vulgo">Vulgo</label>
+        <input class="form-control" id="vulgo" name="vulgo" type="text" placeholder="Virgem de 40 anos"/>
+    </div>
+    <div class="form-group">
+        <label for="numero">Número da Camisa</label>
+        <input class="form-control" id="numero" name="numero" type="number" placeholder="69"/>
+    </div>
+    <div class="form-group">
+        <label for="insta">Instagram</label>
+        <input class="form-control" id="insta" name="insta" type="text" placeholder="@negosvaldo.virgem"/>
+    </div>
+    <div class="form-group">
+        <label for="imagem">Imagem</label>
+        <br>
+        <input id="imagem" name="imagem" type="file" accept="image/*" alt=""/>
+    </div>
+    <br>
+    <button type="submit" class="btn">Finalizar</button>
+</form>
 {% endblock %}

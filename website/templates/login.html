@@ -2,6 +2,23 @@
 
 {% block title %}Login{% endblock %}
 
-
 {% block content %}
+    <form method="POST">
+        <br>
+        <br>
+        <div style="align-content: center">
+            <h3>Seja bem-vindo <span>BAGRE</span>!</h3>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input class="form-control" id="email" name="email" type="email" placeholder="negosvaldo.oliv99@gmail.com"/>
+        </div>
+        <div class="form-group">
+            <label for="senha">Senha</label>
+            <input class="form-control" id="senha" name="senha" type="password" placeholder="**********"/>
+        </div>
+        <br>
+        <button type="submit" class="btn">Login</button>
+    </form>
 {% endblock %}

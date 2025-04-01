@@ -46,7 +46,7 @@ Ative o ambiente virtual:
 Com o ambiente virtual ativado, instale os pacotes necessários:
 
 ```sh
-pip install flask flask-login flask-sqlalchemy
+pip install flask flask-login flask-sqlalchemy flask-migrate
 ```
 
 ## Passo 4: Executar o site
@@ -54,13 +54,13 @@ pip install flask flask-login flask-sqlalchemy
 Se o arquivo `main.py` contiver a definição do aplicativo Flask, execute o seguinte comando para iniciar o servidor:
 
 ```sh
-python main.py
+python app.py
 ```
 
 Caso esteja usando Linux ou macOS e a instalação seja para `python3`, rode:
 
 ```sh
-python3 main.py
+python3 app.py
 ```
 
 O servidor Flask será iniciado em `http://127.0.0.1:5000/`.
