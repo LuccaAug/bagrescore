@@ -34,6 +34,7 @@ body {
   color: #0c0c0c;
   background-color: #ffffff;
   overflow-x: hidden;
+  margin-bottom:50px;
 }
 
 .layout_padding {
@@ -874,183 +875,21 @@ a:focus {
 // end contact section
 
 
-
-// info section
-.info_section {
-  background-color: $primary2;
-  color: $white;
-
-  .info_top {
-    display: flex;
-    align-items: center;
-
-    .info_logo {
-      margin-right: 45px;
-
-      a {
-        display: block;
-        background-color: $white;
-        padding: 20px 35px;
-
-        img {
-          width: 55px;
-        }
-      }
-    }
-  }
-
-  .info_form {
-    flex: 1;
-    margin-top: 15px;
-
-    form {
-      display: flex;
-      align-items: flex-end;
-
-      input {
-        background-color: transparent;
-        padding: 5px 0;
-        outline: none;
-        width: 100%;
-        min-width: 100%;
-        color: $white;
-        border: none;
-        border-bottom: 1px solid $white;
-
-        &::placeholder {
-          color: #9c9c9c;
-        }
-      }
-
-      button {
-        background-color: transparent;
-        color: $primary1;
-        margin-top: 15px;
-        text-transform: uppercase;
-        font-size: 15px;
-        outline: none;
-        border: none;
-        transform: translateX(-100%);
-      }
-    }
-  }
-
-  h5 {
-    text-transform: uppercase;
-    position: relative;
-    padding-left: 20px;
-    margin-bottom: 25px;
-
-    &:before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 0;
-      width: 15px;
-      height: 15px;
-      background-color: $primary1;
-      transform: translateY(-50%);
-    }
-  }
-
-  .info_links {
-    .info_links_menu {
-      display: flex;
-      flex-direction: column;
-
-      a {
-        color: $white;
-
-        &:not(:nth-last-child(1)) {
-          margin-bottom: 10px;
-        }
-
-        &:hover,
-        &.active {
-          color: $primary1;
-        }
-      }
-    }
-  }
-
-  .info_post {
-    .post_box {
-      display: flex;
-      align-items: center;
-
-      .img-box {
-        width: 65px;
-        min-width: 65px;
-        height: 65px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: $white;
-        margin-right: 10px;
-
-        img {
-          width: 55px;
-        }
-      }
-
-      p {
-        margin: 0;
-      }
-
-      &:not(:nth-last-child(1)) {
-        margin-bottom: 15px;
-      }
-    }
-  }
-
-  .info_contact {
-    a {
-      display: flex;
-      align-items: center;
-      color: $white;
-      margin-bottom: 10px;
-
-      i {
-        margin-right: 5px;
-        width: 25px;
-      }
-
-      &:hover {
-        p {
-          color: $white;
-        }
-      }
-    }
-  }
-
-  .social_box {
-    width: 100%;
-    display: flex;
-    margin-top: 25px;
-
-    a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: $primary1;
-      font-size: 24px;
-      margin-right: 10px;
-    }
-  }
-}
-
-// end info section
-
 /* footer section*/
 
 .footer_section {
-  position: relative;
+  position: fixed;
+  height: 25px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 0;
   background-color: $primary2;
   text-align: center;
 
   p {
     color: $white;
-    padding: 25px 0;
+    padding: 10px 0;
     margin: 0;
 
     a {
@@ -1059,5 +898,35 @@ a:focus {
   }
 }
 
+form {
+  display: flex;
+  align-items: flex-end;
+
+  input {
+    background-color: transparent;
+    padding: 5px 0;
+    outline: none;
+    width: 100%;
+    min-width: 100%;
+    color: $white;
+    border: none;
+    border-bottom: 1px solid $white;
+
+    &::placeholder {
+      color: #9c9c9c;
+    }
+  }
+
+  button {
+    background-color: transparent;
+    color: $primary1;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    transform: translateX(-100%);
+  }
+}
 
 // end footer section

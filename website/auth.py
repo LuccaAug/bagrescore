@@ -51,21 +51,21 @@ def signup():
         if usuario:
             flash('Email já cadastrado', category='error')
             print(usuario)
-        # elif jogador:
-        #     flash('Vulgo já cadastrado', category='error')
-        #     print(jogador)
-        # elif len(email) == 0:
-        #     flash('Informe um email válido', category='error')
-        # elif len(senha) < 5:
-        #     flash('A senha precisa ter pelo menos 5 dígitos', category='error')
-        # elif senha != senha_confirmacao:
-        #     flash('As senhas digitadas não estão iguais', category='error')
-        # elif len(nome) < 4:
-        #     flash('O nome precisa ter pelo menos 4 dígitos', category='error')
-        # elif len(vulgo) < 2:
-        #     flash('O vulgo precisa ter pelo menos 2 dígitos', category='error')
-        # elif int(numero) < 0 and int(numero) > 999:
-        #     flash('O número deve ter no máximo 3 dígitos e ser positivo', category='error')
+        elif jogador:
+            flash('Vulgo já cadastrado', category='error')
+            print(jogador)
+        elif len(email) == 0:
+            flash('Informe um email válido', category='error')
+        elif len(senha) < 5:
+            flash('A senha precisa ter pelo menos 5 dígitos', category='error')
+        elif senha != senha_confirmacao:
+            flash('As senhas digitadas não estão iguais', category='error')
+        elif len(nome) < 4:
+            flash('O nome precisa ter pelo menos 4 dígitos', category='error')
+        elif len(vulgo) < 2:
+            flash('O vulgo precisa ter pelo menos 2 dígitos', category='error')
+        elif int(numero) < 0 and int(numero) > 999:
+            flash('O número deve ter no máximo 3 dígitos e ser positivo', category='error')
         else:
             path_imagem = None
             print("Request files: ", request.files)
